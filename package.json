@@ -1,0 +1,40 @@
+{
+  "name": "mindseye",
+  "version": "1.0.0",
+  "description": "MindsEye is a prometheus exporter that helps you track node packages in production.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamzerolabs/mindseye.git"
+  },
+  "keywords": [
+    "monitoring",
+    "prometheus",
+    "exporter",
+    "packages"
+  ],
+  "author": "Jack Yeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teamzerolabs/mindseye/issues"
+  },
+  "peerDependencies": {
+    "express": "4.x",
+    "prom-client": "^11.5.0"
+  },
+  "homepage": "https://github.com/teamzerolabs/mindseye#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "prom-client": "^11.5.3"
+  }
+}
