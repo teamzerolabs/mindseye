@@ -1,5 +1,7 @@
 # mindseye
 
+<img src="https://user-images.githubusercontent.com/7019327/74049379-d7048900-4988-11ea-9cde-af4c759a54e1.png" width="100" height="100">
+
 MindsEye is a prometheus exporter that helps you track node packages in production.
 
 ```js
