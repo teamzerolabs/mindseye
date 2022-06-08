@@ -24,8 +24,8 @@
     "url": "https://github.com/teamzerolabs/mindseye/issues"
   },
   "peerDependencies": {
-    "express": "4.x",
-    "prom-client": "^11.5.0"
+    "express": "^4.17.1",
+    "prom-client": "^11.5.0 || ^12 || ^13 || ^14"
   },
   "homepage": "https://github.com/teamzerolabs/mindseye#readme",
   "devDependencies": {
