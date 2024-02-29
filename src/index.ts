@@ -1,6 +1,5 @@
 import { Counter, register, Registry } from "prom-client";
 import { readFileSync } from "fs";
-import express from "express";
 
 /**
  * Capture fields from the default package.json
@@ -142,7 +141,9 @@ export function collectPackageInfo(config: MindsEyeConfiguration): boolean {
 
     // Setup express.
     if (config.runExpress !== false) {
-      const metricServer: express.Application = express();
+      const express = require("express")
+
+      const metricServer = express();
       metricServer.get("/metrics", (req, res) => {
         res.send(Registry.merge(localRegisters).metrics());
       });
